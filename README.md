@@ -191,6 +191,3 @@ Market-Basket-Analysis/
 
 ---
 
-## License
-
-This project is open source and available for educational and personal use.
