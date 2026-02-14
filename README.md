@@ -14,8 +14,6 @@ A data mining project that uncovers hidden purchasing patterns in grocery transa
 - [Key Findings](#key-findings)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [License](#license)
 
 ---
 
