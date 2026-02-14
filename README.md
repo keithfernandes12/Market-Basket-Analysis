@@ -178,16 +178,4 @@ pip install pandas numpy matplotlib seaborn mlxtend squarify PyARMViz
 
 ---
 
-## Project Structure
-
-```
-Market-Basket-Analysis/
-│
-├── Groceries_dataset.csv                                          # Raw transaction data
-├── Market Basket Analysis - Grocery Data usign Apriori Model.ipynb  # Jupyter Notebook with full analysis
-├── Market Basket Anaylsis - Grocery Data usign Apriori Model.png    # Sankey visualization output
-└── README.md                                                      # This file
-```
-
----
 
