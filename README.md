@@ -1,4 +1,4 @@
-# Market Basket Analysis — Grocery Data Using Apriori Model
+# Market Basket Analysis - Grocery Data Using Apriori Model
 
 A data mining project that uncovers hidden purchasing patterns in grocery transaction data using the **Apriori algorithm** and **association rule mining**. The analysis identifies products frequently bought together, enabling actionable retail strategies like product placement, promotional bundling, and cross-selling.
 
@@ -25,9 +25,9 @@ A data mining project that uncovers hidden purchasing patterns in grocery transa
 
 ### Core Concepts
 
-- **Affinity Analysis** — Discovers co-occurrence relationships among items recorded in transactions, enabling retailers to understand customer purchase behavior.
-- **Association Rule Mining** — Identifies combinations of items that occur together frequently and expresses them as "if → then" rules (e.g., *if yogurt, then whole milk*).
-- **Apriori Algorithm** — Iteratively identifies frequent individual items and extends them to larger itemsets, pruning infrequent candidates at each level using the Apriori property: *if an itemset is infrequent, all its supersets are also infrequent*.
+- **Affinity Analysis** - Discovers co-occurrence relationships among items recorded in transactions, enabling retailers to understand customer purchase behavior.
+- **Association Rule Mining** - Identifies combinations of items that occur together frequently and expresses them as "if → then" rules (e.g., *if yogurt, then whole milk*).
+- **Apriori Algorithm** - Iteratively identifies frequent individual items and extends them to larger itemsets, pruning infrequent candidates at each level using the Apriori property: *if an itemset is infrequent, all its supersets are also infrequent*.
 
 ### Metrics
 
@@ -55,9 +55,9 @@ The project uses the [Groceries Dataset](https://www.kaggle.com/datasets/heerald
 
 Each row represents a single item purchased by a customer on a given date. The three columns are:
 
-- `Member_number` — Unique customer identifier
-- `Date` — Date of purchase
-- `itemDescription` — Name of the grocery item
+- `Member_number` - Unique customer identifier
+- `Date` - Date of purchase
+- `itemDescription` - Name of the grocery item
 
 ### Top 10 Most Purchased Items
 
@@ -84,7 +84,7 @@ The notebook follows a structured pipeline:
 Load the CSV and explore customer purchase patterns, date ranges, and item distributions.
 
 ### 2. Transaction Creation
-Group individual item records into baskets — each unique combination of `Member_number` and `Date` forms one transaction (a list of items bought together in a single trip).
+Group individual item records into baskets - each unique combination of `Member_number` and `Date` forms one transaction (a list of items bought together in a single trip).
 
 ### 3. One-Hot Encoding
 Transform the list of transactions into a binary matrix (14,963 × 167) using `TransactionEncoder` from mlxtend, where each row is a transaction and each column is a product (`True` = purchased, `False` = not purchased).
@@ -123,28 +123,28 @@ Visualize the rules using PyARMViz's parallel category (Sankey-style) plot, show
 
 ### Insights
 
-1. **Whole milk is the anchor product** — present in 15.8% of all transactions and involved in more association rules than any other item.
+1. **Whole milk is the anchor product** - present in 15.8% of all transactions and involved in more association rules than any other item.
 2. **Core product clusters** identified: whole milk ↔ other vegetables, rolls/buns ↔ sausage, yogurt ↔ whole milk, soda ↔ rolls/buns.
 3. **Three-item combinations** like {whole milk, yogurt, sausage} show the strongest lift values, indicating customers who buy two of these are highly likely to buy the third.
 
 ### Business Applications
 
-- **Shelf Placement** — Place strongly associated items (e.g., sausage near yogurt and whole milk) in adjacent aisles to encourage cross-purchases.
-- **Promotional Bundling** — Offer combo discounts on high-lift item pairs to increase basket size.
-- **Targeted Advertising** — Recommend associated items to customers based on their current basket contents.
-- **Store Layout Optimization** — Use the Sankey flow diagram to inform how product categories should flow through the store.
+- **Shelf Placement** - Place strongly associated items (e.g., sausage near yogurt and whole milk) in adjacent aisles to encourage cross-purchases.
+- **Promotional Bundling** - Offer combo discounts on high-lift item pairs to increase basket size.
+- **Targeted Advertising** - Recommend associated items to customers based on their current basket contents.
+- **Store Layout Optimization** - Use the Sankey flow diagram to inform how product categories should flow through the store.
 
 ---
 
 ## Technologies Used
 
 - **Python 3**
-- **pandas** — Data manipulation and analysis
-- **NumPy** — Numerical computation
-- **mlxtend** — Apriori algorithm and association rule mining
-- **matplotlib / seaborn** — Data visualization
-- **squarify** — Treemap visualization
-- **PyARMViz** — Association rule visualization (Sankey/parallel category plots)
+- **pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computation
+- **mlxtend** - Apriori algorithm and association rule mining
+- **matplotlib / seaborn** - Data visualization
+- **squarify** - Treemap visualization
+- **PyARMViz** - Association rule visualization (Sankey/parallel category plots)
 
 ---
 
@@ -191,6 +191,3 @@ Market-Basket-Analysis/
 
 ---
 
-## License
-
-This project is open source and available for educational and personal use.
